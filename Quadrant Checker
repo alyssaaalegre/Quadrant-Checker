@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+    Scanner input = new Scanner(System.in);
+   
+   //user input for x value
+   System.out.print("Enter x: ");
+   int firstNum = input.nextInt();
+   
+   //user input for y value
+   System.out.print("Enter y: ");
+   int secondNum = input.nextInt();
+  
+   if (firstNum > 0 &&  secondNum > 0){
+   System.out.print("Quadrant: I");
+   }
+   else if (firstNum < 0 &&  secondNum > 1){
+   System.out.print("Quadrant: II");
+   }
+   else if (firstNum < 0 &&  secondNum < 0){
+   System.out.print("Quadrant: III");
+   }
+   else if (firstNum > 0 &&  secondNum < 0){
+   System.out.print("Quadrant: IV");
+   }
+   else{
+   System.out.println("Incorrect");
+   }
+    }
+}
